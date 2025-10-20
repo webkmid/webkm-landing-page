@@ -1,0 +1,29 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  /* Konfigurasi Font */
+  --font-inter: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Gaya Dasar & Utilitas Kustom */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  @apply font-inter bg-slate-50 text-slate-900 antialiased;
+}
+
+/* Utilitas untuk teks gradien */
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-500 to-indigo-600 bg-clip-text text-transparent;
+}
+
+/* Utilitas untuk scrollbar horizontal */
+.horizontal-track::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-track::-webkit-scrollbar-thumb {
+  @apply bg-slate-900/10 rounded-full;
+}
