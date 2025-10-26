@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import { useState } from 'react';
+import { Logo } from '../assets';
 
 const navLinks = [
   { href: "#features", label: "Fitur" },
@@ -17,10 +18,10 @@ export const Header = () => {
       <div className="bg-white/80 backdrop-blur border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-indigo-600 text-white grid place-items-center font-bold shadow-md">B</div>
+            <img src={Logo} className='w-10 h-10 rounded-lg'/>
             <div>
-              <div className="font-extrabold leading-tight">Bastilla</div>
-              <div className="text-xs text-slate-500 -mt-0.5">UMKM Templates</div>
+              <div className="font-extrabold leading-tight">WEBKM.ID</div>
+              <div className="text-xs text-slate-500 -mt-0.5">Solusi Digital UMKM</div>
             </div>
           </a>
 
