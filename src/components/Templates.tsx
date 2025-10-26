@@ -14,7 +14,7 @@ const premiumTemplates = [
   { title: "Agent Property", category: "Property", meta: "Integrations • Booking", image: LppProperty },
 ];
 
-const TemplateCard = ({ template, isPremium }: { template: typeof freeTemplates[0], isPremium: boolean }) => (
+const TemplateCard = ({ template }: { template: typeof freeTemplates[0], isPremium: boolean }) => (
   <article className="w-[320px] md:w-[360px] shrink-0 snap-start rounded-2xl bg-white border border-slate-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col">
     <a href={template.url} target="_blank">
     <div className="relative w-full pt-[56.25%] overflow-hidden rounded-t-2xl"><img src={template.image} alt={template.title} className="absolute inset-0 w-full h-full object-cover"/></div>
