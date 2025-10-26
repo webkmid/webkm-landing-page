@@ -1,9 +1,17 @@
 // src/components/Pricing.tsx
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll';
 const pricingPlans = [
-  { name: 'Starter', price: 'Rp 1,5jt', features: ['• 2 konsep', '• 3x revisi', '• File vector'], cta: 'Pilih Paket' },
-  { name: 'Growth', price: 'Rp 4,5jt', features: ['• 3 konsep', '• Revisi sampai final', '• Guideline 12+ halaman'], cta: 'Pilih Paket', featured: true },
-  { name: 'Scale', price: 'Custom', features: ['• Retainer bulanan', '• Design system', '• Tim kolaboratif'], cta: 'Diskusikan' },
+  { name: 'UMKM Basic', price: 'FREE', features: ['• Template Free', '• Hosting & Subdomain', '• Integrasi Social Media','• Custom Warna'], cta: 'Pilih Paket' },
+  { name: 'UMKM Premium', price: 'Rp 500.000', features: ['• Template Premium', '• Hosting & Subdomain', '• Integrasi Social Media', '• Tambahan Hingga 2 Section','• 1x Update Konten Per Bulan','• 2x Revisi Design','• Basic SEO','• Custom Warna'], cta: 'Pilih Paket', featured: true },
+  { name: 'Full Custom Landing Page', price: 'Start from Rp 900.000', features: ['• Full Custom Design by WebKM Team',
+'• Hosting & Subdomain',
+'• Maksimal 8 Section',
+'• 2x Update Konten Per Bulan',
+'• 3x Revisi Design',
+'• Konsultasi Design Langsung',
+], cta: 'Diskusikan' },
+  { name: 'Professional Website', price: 'Start from Rp 3.000.000', features: ['• Multi Page (Home, About, Product, Blog, Contact, dll)', '• Full UI/UX Design', '• Frontend + Backend Development', '• Mobile responsive', '• Support 1 bulan'], cta: 'Diskusikan' },
+  { name: 'Professional Website + Mobile', price: 'Start from Rp 5.000.000', features: ['• Full custom design', '• Shared backend system', '• Dashboard/admin panel', '• Business system integration', '• Ongoing support'], cta: 'Diskusikan' },
 ];
 
 export const Pricing = () => {
@@ -11,7 +19,7 @@ export const Pricing = () => {
   return (
     <section ref={sectionRef} id="pricing" className="py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-8"><h2 className="text-2xl font-extrabold">Paket Harga Bastilla</h2><p className="text-muted mt-2">Pilih yang sesuai untuk bisnis Anda — mulai dari paket Starter hingga Scale.</p></div>
+        <div className="text-center mb-8"><h2 className="text-2xl font-extrabold">Paket Harga WEBKM.ID</h2><p className="text-muted mt-2">Pilih yang sesuai untuk bisnis Anda — mulai dari paket Starter hingga Scale.</p></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           {pricingPlans.map(plan => (
             <div key={plan.name} className={`relative bg-white rounded-2xl p-6 border transition-transform duration-300 ${plan.featured ? 'border-2 border-indigo-500 shadow-xl scale-105' : 'border-slate-100 shadow-md'}`}>
