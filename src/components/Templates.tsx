@@ -15,7 +15,7 @@ const premiumTemplates = [
 ];
 
 const TemplateCard = ({ template }: { template: typeof freeTemplates[0], isPremium: boolean }) => (
-  <article className="w-[320px] md:w-[360px] shrink-0 snap-start rounded-2xl bg-white border border-slate-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col">
+  <article className="w-[320px] md:w-[360px] shrink-0 snap-start rounded-2xl bg-white border border-slate-100 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl flex flex-col overflow-y-visible">
     <a href={template.url} target="_blank">
     <div className="relative w-full pt-[56.25%] overflow-hidden rounded-t-2xl"><img src={template.image} alt={template.title} className="absolute inset-0 w-full h-full object-cover"/></div>
     </a>
@@ -42,11 +42,11 @@ export const Templates = () => {
     <section ref={sectionRef} id="templates" className="py-16 bg-slate-100/70">
       <div className="max-w-7xl mx-auto px-6">
         <div><h2 className='font-semibold text-2xl'>Template UMKM Free</h2><p className="text-muted">Pilihan ringan & cepat untuk memulai — cocok untuk test market.</p></div>
-        <div ref={freeTrackRef} className="horizontal-track flex gap-6 overflow-x-visible snap-x snap-mandatory pb-4 mt-6 cursor-grab active:cursor-grabbing">
+        <div ref={freeTrackRef} className="horizontal-track flex  gap-6 overflow-x-auto snap-x snap-mandatory pb-4 mt-6 cursor-grab active:cursor-grabbing ">
           {freeTemplates.map(tpl => <TemplateCard key={tpl.title} template={tpl} isPremium={false} />)}
         </div>
         <div className="mt-12"><h2 className='font-semibold text-2xl'>Template UMKM Premium</h2><p className="text-muted">Fitur lengkap, animasi, dan support prioritas — untuk brand yang fokus scale-up.</p></div>
-        <div ref={premiumTrackRef} className="horizontal-track flex gap-6 overflow-x-visible snap-x snap-mandatory pb-4 mt-6 cursor-grab active:cursor-grabbing">
+        <div ref={premiumTrackRef} className="horizontal-track flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 mt-6 cursor-grab active:cursor-grabbing">
           {premiumTemplates.map(tpl => <TemplateCard key={tpl.title} template={tpl} isPremium={true} />)}
         </div>
       </div>
