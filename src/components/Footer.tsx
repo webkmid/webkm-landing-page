@@ -11,11 +11,11 @@ const quickLinks = [
 
 // Data for social media links
 const socialLinks = [
-  { href: "https://shopee.co.id", src: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg", alt: "Shopee", className: "h-8" },
-  { href: "https://tokopedia.com", src: "https://seeklogo.com/images/T/tokopedia-logo-40654CCDD6-seeklogo.com.png", alt: "Tokopedia", className: "h-8" },
-  { href: "https://tiktok.com", src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg", alt: "TikTok", className: "h-6" },
+  // { href: "https://shopee.co.id", src: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg", alt: "Shopee", className: "h-8" },
+  // { href: "https://tokopedia.com", src: "https://seeklogo.com/images/T/tokopedia-logo-40654CCDD6-seeklogo.com.png", alt: "Tokopedia", className: "h-8" },
+  // { href: "https://tiktok.com", src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg", alt: "TikTok", className: "h-6" },
   { href: "https://instagram.com", src: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png", alt: "Instagram", className: "h-7" },
-  { href: "https://youtube.com", src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg", alt: "YouTube", className: "h-6" },
+  // { href: "https://youtube.com", src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg", alt: "YouTube", className: "h-6" },
 ];
 
 export const Footer: React.FC = () => {
@@ -76,8 +76,8 @@ export const Footer: React.FC = () => {
           </p>
           <p className="text-sm text-sky-200 mt-1">
             Email:{" "}
-            <a href="mailto:info@balirent.id" className="underline hover:text-white">
-              info@balirent.id
+            <a href="mailto:webkm.id@gmail.com" className="underline hover:text-white">
+              webkm.id@gmail.com
             </a>
           </p>
         </div>
