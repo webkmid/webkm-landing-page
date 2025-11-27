@@ -7,7 +7,7 @@ import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { InstagramFeed } from './components/InstagramFeed';
+// import { InstagramFeed } from './components/InstagramFeed';
 
 export default function App() {
   return (
@@ -20,7 +20,7 @@ export default function App() {
         <Pricing />
         <Testimonials />
         <Contact />
-        <InstagramFeed />
+        {/* <InstagramFeed /> */}
       </main>
       <Footer />
     </>

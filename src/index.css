@@ -21,7 +21,7 @@ body {
 }
 /* Utilitas untuk teks gradien */
 .gradient-text {
-  @apply bg-gradient-to-r from-cyan-500 to-indigo-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent;
 }
 
 /* Utilitas untuk scrollbar horizontal */
