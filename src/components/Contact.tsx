@@ -19,7 +19,7 @@ export const Contact = () => {
             <div><label className="text-sm font-semibold">WhatsApp</label><input type="tel" id="phone" value={formData.phone} onChange={handleChange} placeholder="+62 8xx" required className="w-full mt-1 p-2 border rounded-md"/></div>
           </div>
           <div><label className="text-sm font-semibold">Pesan</label><textarea id="message" value={formData.message} onChange={handleChange} rows={4} placeholder="Ceritakan tujuan, target market, dll." className="w-full mt-1 p-2 border rounded-md"></textarea></div>
-          <div className="flex gap-4 items-center"><button type="submit" className="bg-indigo-600 text-white px-5 py-2.5 rounded-lg shadow font-semibold">Kirim Pesan</button><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-indigo-600">atau Chat WhatsApp</a></div>
+          <div className="flex gap-4 items-center"><a href={`https://wa.me/6282295285472?text=${encodeURI(`Hai, nama saya ${formData.name} dengan email ${formData.email} ingin bertanya mengenai ${formData.message}`)}`} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-white bg-indigo-600 px-5 py-2.5 rounded-lg shadow">Kirim Pesan</a></div>
         </form>
       </div>
     </section>
