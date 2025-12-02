@@ -1,17 +1,21 @@
 // src/components/Templates.tsx
-import { LpfBus, LpfProperty, LpfRent, LppBus, LppProperty, LppRent } from '../assets/images';
+import { LpfBus, LpfGraphic, LpfOnlineStore, LpfProperty, LpfRent, LppBus, LppGraphic, LppOnlineStore, LppProperty, LppRent } from '../assets/images';
 import { useDraggableScroll } from '../hooks/useDraggableScroll';
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll';
 
 const freeTemplates = [
-  { title: "Rental Mobil", category: "Rental • Kendaraan", meta: "Ringan & SEO friendly", image: LpfRent, url:'https://lpf-01-rental.webkm.id' },
-  { title: "Bis", category: "Kendaraan • Travel", meta: "Tracking sederhana", image: LpfBus },
-  { title: "Agent Property", category: "Property", meta: "Integrasi marketplace", image: LpfProperty },
+  { title: "Rental Mobil", category: "Rental • Kendaraan", meta: "Template modern untuk bisnis rental mobil & motor dengan fitur pemesanan cepat.", image: LpfRent, url:'https://lpf-01-rental.webkm.id' },
+  { title: "Bis / Bus Travel", category: "Kendaraan • Travel", meta: "Solusi website untuk layanan perjalanan dan bus travel dengan informasi rute & layanan lengkap.", image: LpfBus,url:'https://lpf-02-bus.webkm.id/' },
+  { title: "Agent Property", category: "Property", meta: "Template profesional untuk agen properti dengan katalog listing yang mudah diakses.", image: LpfProperty,url:'https://lpf-03-agent-property.webkm.id/' },
+  { title: "Toko Online", category: "E-Commerce • UMKM", meta: "Template toko online dengan katalog produk dan checkout yang mudah digunakan.", image: LpfOnlineStore,url:'https://lpf-04-toko-online.webkm.id/' },
+  { title: "Graphic", category: "Creative • Portfolio", meta: "Template portofolio elegan untuk menampilkan karya desain & layanan kreatif.", image: LpfGraphic,url:'https://lpf-05-graphic.webkm.id/' },
 ];
 const premiumTemplates = [
-  { title: "Rental Mobil", category: "Rental • Kendaraan", meta: "Ringan & SEO friendly", image: LppRent },
-  { title: "Bis", category: "Kendaraan • Travel", meta: "Integrations • Analytics", image: LppBus },
-  { title: "Agent Property", category: "Property", meta: "Integrations • Booking", image: LppProperty },
+  { title: "Rental Mobil", category: "Rental • Kendaraan", meta: "Platform rental modern dengan katalog fleksibel & pemesanan instan.", image: LppRent,url:'https://lpp-01-rental.webkm.id/' },
+  { title: "Bis", category: "Kendaraan • Travel", meta: "Website perjalanan profesional dengan jadwal rute & pemantauan perjalanan.", image: LppBus,url:'https://lpp-02-bus.webkm.id/' },
+  { title: "Agent Property", category: "Property", meta: "Situs properti premium untuk menampilkan listing & konsultasi pelanggan", image: LppProperty,url:'https://lpp-03-agent-property.webkm.id/' },
+  { title: "Toko Online", category: "E-Commerce • UMKM", meta: "Toko online modern dengan katalog produk & sistem pemesanan terpadu.", image: LppOnlineStore,url:'https://lpp-04-toko-online.webkm.id/' },
+  { title: "Graphic", category: "Creative • Portfolio", meta: "Portfolio kreatif berkelas untuk menampilkan karya, layanan, dan identitas brand.", image: LppGraphic,url:'https://lpp-05-graphic.webkm.id/' },
 ];
 
 const TemplateCard = ({ template }: { template: typeof freeTemplates[0], isPremium: boolean }) => (

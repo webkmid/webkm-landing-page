@@ -26,11 +26,9 @@ export const Footer: React.FC = () => {
         <div>
           <h3 className="text-2xl font-bold">WEBKM.ID</h3>
           <p className="text-sky-200 text-sm mt-3 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur, arcu sit amet fermentum elementum, urna tortor gravida
-            libero, ut gravida mi justo eget nulla. Curabitur viverra, risus nec
-            bibendum ullamcorper, justo magna accumsan est, non tincidunt lectus
-            sapien nec purus. Quisque et nisi lorem.
+            Kami percaya setiap UMKM memiliki potensi besar untuk berkembang.
+WebKM hadir membantu bisnis tampil lebih profesional dan siap bersaing di era digital.
+Website siap pakai, cepat, ringan, dan gratis untuk memulai perjalanan digital Anda.
           </p>
         </div>
 
