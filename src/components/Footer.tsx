@@ -1,20 +1,13 @@
 // src/components/Footer.tsx
 import React from 'react';
-
+import {navLinks} from '../utils/constant'
 // Data for navigation links
-const quickLinks = [
-  { href: "#produk", label: "Produk Pilihan" },
-  { href: "#campaign", label: "Campaign" },
-  { href: "#all", label: "Semua Produk" },
-  { href: "#social", label: "Social Media" },
-];
-
 // Data for social media links
 const socialLinks = [
   // { href: "https://shopee.co.id", src: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg", alt: "Shopee", className: "h-8" },
   // { href: "https://tokopedia.com", src: "https://seeklogo.com/images/T/tokopedia-logo-40654CCDD6-seeklogo.com.png", alt: "Tokopedia", className: "h-8" },
   // { href: "https://tiktok.com", src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg", alt: "TikTok", className: "h-6" },
-  { href: "https://instagram.com", src: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png", alt: "Instagram", className: "h-7" },
+  { href: "https://www.instagram.com/webkm.id/", src: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png", alt: "Instagram", className: "h-7" },
   // { href: "https://youtube.com", src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg", alt: "YouTube", className: "h-6" },
 ];
 
@@ -36,7 +29,7 @@ Website siap pakai, cepat, ringan, dan gratis untuk memulai perjalanan digital A
         <div>
           <h4 className="font-semibold text-lg mb-3">Navigasi Cepat</h4>
           <ul className="space-y-2 text-sky-200 text-sm">
-            {quickLinks.map((link) => (
+            {navLinks.map((link) => (
               <li key={link.href}>
                 <a href={link.href} className="hover:underline">
                   {link.label}
@@ -68,8 +61,8 @@ Website siap pakai, cepat, ringan, dan gratis untuk memulai perjalanan digital A
           </div>
           <p className="text-sm text-sky-200">
             WhatsApp:{" "}
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
-              +62 812 3456 7890
+            <a href="https://wa.me/6282295285472" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+              +62 822-9528-5472
             </a>
           </p>
           <p className="text-sm text-sky-200 mt-1">
@@ -83,7 +76,7 @@ Website siap pakai, cepat, ringan, dan gratis untuk memulai perjalanan digital A
 
       {/* Copyright Section */}
       <div className="border-t border-sky-700 mt-10 pt-6 text-center text-sky-300 text-sm">
-        © {new Date().getFullYear()} <span className="font-semibold text-white">BaliRent</span>. Semua Hak Dilindungi.
+        © {new Date().getFullYear()} <span className="font-semibold text-white">WEBKM.ID</span>. Semua Hak Dilindungi.
         <br />
         <span className="text-sky-400">
           Powered by{" "}

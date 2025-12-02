@@ -1,13 +1,8 @@
 // src/components/Header.tsx
 import { useState } from 'react';
 import { Logo } from '../assets';
+import {navLinks} from '../utils/constant'
 
-const navLinks = [
-  { href: "#features", label: "Fitur" },
-  { href: "#templates", label: "Template" },
-  { href: "#pricing", label: "Paket" },
-  { href: "#contact", label: "Kontak" },
-];
 
 export const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
