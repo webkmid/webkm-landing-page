@@ -8,5 +8,15 @@ import LppOnlineStore from './lpp-04-online-store.png';
 import LpfOnlineStore from './lpf-04-online-store.png';
 import LpfGraphic from './lpf-05-graphic.png';
 import LppGraphic from './lpp-05-graphic.png';
+import Kolaboravis from './Kolaboravis.png';
+import Sport90 from './90sport.png';
+import SalwaProperti from './Salwa.png';
+import CreativeStudio from './Creative.png';
+import LuxEstate from './Agent.png';
 
-export {LpfRent,LppRent,LppBus,LppProperty,LpfBus,LpfProperty,LppOnlineStore,LpfOnlineStore,LpfGraphic,LppGraphic}
+export {
+  LpfRent, LppRent, LppBus, LppProperty,
+  LpfBus, LpfProperty, LppOnlineStore, LpfOnlineStore,
+  LpfGraphic, LppGraphic,
+  Kolaboravis, Sport90, SalwaProperti, CreativeStudio, LuxEstate
+}

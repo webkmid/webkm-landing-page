@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Kolaboravis, Sport90, SalwaProperti, CreativeStudio, LuxEstate } from "../assets/images";
 
 const teal = {
   50: "#E1F5EE",
@@ -136,7 +137,7 @@ const portfolios = [
     title: "Kolaboravis.id",
     category: "Digital Agency",
     type: "Landing Page",
-    image:"/src/assets/images/Kolaboravis.png",
+    image:Kolaboravis,
     desc: "Landing page modern untuk agensi digital, dengan desain menarik dan CTA yang jelas.",
     url: "kolaboravis.id",
     color: "#FFF7ED",
@@ -147,7 +148,7 @@ const portfolios = [
     title: "90PlusSportsAgency",
     category: "Agensi Olahraga",
     type: "Company Profile",
-    image:"/src/assets/images/90sport.png",
+    image:Sport90,
     desc: "Website company profile untuk agensi olahraga, menampilkan layanan, portofolio, dan form kontak profesional.",
     url: "90sportsagency.com",
     color: "#F0FDF4",
@@ -158,7 +159,7 @@ const portfolios = [
     title: "Salwa Properti",
     category: "Construction & Properti",
     type: "Landing Page",
-    image:"/src/assets/images/Salwa.png",
+    image:SalwaProperti,
     desc: "Landing page untuk bisnis rental mobil, dengan fitur pemesanan online dan informasi armada yang lengkap.",
     url: "webkm.id",
     color: "#EFF6FF",
@@ -169,7 +170,7 @@ const portfolios = [
     title: "Creative Studio",
     category: "Desain Grafis",
     type: "Landing Page",
-    image: "/src/assets/images/Creative.png",
+    image: CreativeStudio,
     desc: "Landing page untuk studio kreatif, menampilkan portofolio karya desain grafis dengan tata letak yang menarik dan responsif.",
     url: "lpp-05-graphic.webkm.id",
     color: "#FDF4FF",
@@ -180,7 +181,7 @@ const portfolios = [
     title: "LuxEstate Properti",
     category: "Properti",
     type: "Landing Page",
-    image: "/src/assets/images/Agent.png",
+    image: LuxEstate,
     desc: "Landing page untuk agen properti, dengan fitur pencarian properti, galeri foto, dan form kontak yang mudah diakses.",
     url: "lpp-03-agent-property.webkm.id",
     color: "#FFFBEB",
