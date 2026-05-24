@@ -79,7 +79,7 @@ const packages = [
   },
   {
     name: "Growth",
-    price: "Rp 6 jt",
+    price: "Rp 3 jt",
     desc: "Tampil profesional + kelola sendiri",
     features: ["Company profile 5 halaman", "Dashboard admin", "Desain logo (2 konsep)", "SEO On-Page dasar", "Google Business setup", "3x revisi"],
     featured: true,
@@ -87,7 +87,7 @@ const packages = [
   },
   {
     name: "Profesional",
-    price: "Rp 12 jt",
+    price: "Rp 9 jt",
     desc: "Website bisnis + toko online penuh",
     features: ["Semua fitur Growth", "Toko online & checkout", "Payment gateway", "Dashboard pesanan & stok", "Branding kit lengkap", "Revisi unlimited"],
     featured: false,
@@ -95,7 +95,7 @@ const packages = [
   },
   {
     name: "Enterprise",
-    price: "Rp 20 jt+",
+    price: "Rp 15 jt+",
     desc: "Solusi custom untuk bisnis yang scale",
     features: ["Semua fitur Profesional", "Fitur custom", "Multi-user admin", "Laporan & analitik", "Priority support 3 bulan"],
     featured: false,
