@@ -161,7 +161,7 @@ const portfolios = [
     type: "Landing Page",
     image:SalwaProperti,
     desc: "Landing page untuk bisnis rental mobil, dengan fitur pemesanan online dan informasi armada yang lengkap.",
-    url: "webkm.id",
+    url: "salwa-properti.webkm.id",
     color: "#EFF6FF",
     accent: "#2563EB",
     year: "2024",
